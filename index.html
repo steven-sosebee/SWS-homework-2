@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Steven Sosebee's Portfolio</title>
+</head>
+<body>
+    <header>
+        <icon><img src="./assets/images/profile.jpg" alt="photo of a man" height="250px"></icon>
+        <navbar>
+            <ul>
+                <li id="about-me"><a href="#about-me-title">About me</a></li>
+                <li class="menu-dropdown" id="web-dev"><a href="#web-dev-title">Web Development</a>
+                    <ul class="dropdown" id="web-dev-dropdown">
+                        <a href="./sample-project.html" target="blank"><li>HTML</li></a>
+                        <a href="./sample-project.html" target="blank"><li>CSS</li></a>
+                        <a href="./sample-project.html" target="blank"><li>Javascript</li></a>
+                    </ul>
+                </li>
+                <li class="menu-dropdown" id="other-skills"><a href="#other-skills-title">Other Skills</a>
+                    <ul class="dropdown" id="other-skills-dropdown">
+                        <li><a href="./sample-project.html" target="blank">Database Management</a></li>
+                        <a href="./sample-project.html" target="blank"><li>MS Office</li></a>
+                    </ul>
+                </li>   
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </navbar>
+    </header>
+    <main>
+        <hero></hero>
+        <section>
+            <row>
+                <title class="work-header" id="about-me-title">About Me</title>
+                <gridbox id="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ad dolor temporibus officia facilis modi impedit delectus labore ipsam sed. Quis quidem consequatur recusandae necessitatibus inventore. Culpa, necessitatibus numquam? Nostrum?</gridbox>
+            </row>
+        </section>
+        <row>
+            <title class="work-header" id="web-dev-title">
+                Web Development
+            </title>
+            <gridbox>
+                <article data-link="./sample-project.html" id="CSS" class="first-article">
+                    <h5>CSS</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+                <article id="HTML">
+                    <h5>HTML</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+                <article id="JS">
+                    <h5>Javascript</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+            </gridbox>
+        </row>
+        <row>
+            <title class="work-header" id="other-skills-title"> 
+                Other Skills
+            </title>
+            <gridbox>
+                <article class="first-article" id="database-management">
+                    <h5>Database Management</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+                <article id="MS-office">
+                    <h5>Microsoft Office Automation</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+                <article id="operations">
+                    <h5>Operations</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+                <article id="team-building">
+                    <h5>Team Building</h5>
+                    <a href="./sample-project.html" target="blank"></a>
+                </article>
+            </gridbox>
+        </row>
+        <aside></aside>
+    </main>
+    <footer>
+        <h4 class="work-header" id="contact-title">Contact:</h4>
+        <ul id="contacts">
+            <li><a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></a></i></li>
+            <li><a href="https://www.github.com/steven-sosebee" target="blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stevensosebee" target="blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/steven.sosebee" target="blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:swsosebee@gmail.com"><i class="fad fa-envelope"></i></a></li>
+        </ul>
+        <p>Made by Steven Sosebee via 2021.  Durham, NC</p>
+    </footer>
+
+</body>
+</html>

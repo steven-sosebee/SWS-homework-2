@@ -1,0 +1,357 @@
+:root{
+    --bg:rgb(175, 183, 185);
+    --bg-accent:rgb(51, 51, 51);
+    --accent:rgb(24, 36, 54);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    word-wrap: normal;
+}
+
+
+pre {
+    
+    display: block;
+    
+    word-wrap: normal;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+code {
+    display: inline-block;
+    word-wrap: normal;
+    text-align: left;
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: left;
+  }
+
+h4{
+    color: white;
+    text-align: left;
+    margin: 5px 0px;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color:white;
+}
+body{
+    background-color: var(--bg) ;
+    margin: 0px;
+    height: 100%;
+    font-size: 18px;
+}
+
+header{
+    background-color: var(--bg-accent);
+    position:relative;
+    height: auto;
+    clear: both;
+    text-align: right;
+}
+
+icon{
+    display: block;
+    margin:0px auto;
+    text-align: center;
+
+}
+navbar{
+    display: inline-block;
+    /* position: absolute; */
+    margin: 0px 5px 0px 5px;
+}
+
+navbar ul{
+    text-align: right;
+    padding: 10px;
+    margin:0px;
+}
+navbar li{
+    display: inline-block;
+    text-decoration-style: none;
+    color: antiquewhite;
+    margin: 10px 15px;
+    
+}
+
+.dropdown{
+    display: none;
+}
+hero{
+    background-image: url("./assets/images/hero.jpg");
+    background-size: cover;
+    display: block;
+    height: 100px;
+
+}
+
+row{
+    display: block;
+    margin: 0px;
+}
+
+title{
+    display: block;
+    border-bottom: solid var(--accent) 5px;
+    height: 100%;
+    margin: 15px 0px;
+    padding:10px
+}
+
+gridbox{
+    display: block ;
+    height: 100%;   
+}
+
+article{
+    min-height: 200px;
+    flex: 1 1 100%;
+    background-color: var(--bg-accent);
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    transition: transform .5s;
+    background-clip: border-box;
+}   
+
+article a{
+    position:absolute;
+    width:100%;
+    height: 100%;
+}
+article::before{
+    content: "";
+    position: absolute;
+    filter:blur(10px);
+    padding: 0px;
+    margin: 0px;
+    left: -25px;
+    right: -25px;
+    top: -25px; 
+    bottom: -25px;
+    background:inherit;
+    box-shadow: inset 0 0 0 300px rgba(161, 162, 163, 0.3);
+    
+}
+
+article:hover::before{
+    filter: none;
+    box-shadow: none;
+
+}
+
+article:hover{
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+article h5{
+    position: absolute;
+    bottom: 20px;
+    font-size: 3vw;
+    color: white;
+    float: left;
+    background-color: var(--bg-accent);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px 5px 0px 10px;
+}
+
+#CSS{
+    background-image: url("./assets/images/CSS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20vw;
+    
+}
+
+
+#HTML{
+    background-image: url("./assets/images/HTML.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#JS{
+    background-image: url("./assets/images/JS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#database-management{
+    background-image: url("./assets/images/SQL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#MS-office{
+    background-image: url("./assets/images/MS-office.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#operations{
+    background-image: url("./assets/images/operations.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#team-building{
+    background-image: url("./assets/images/team-building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer{
+    display: block;
+    background-color: var(--bg-accent);
+    text-align: center;
+}
+
+footer p{
+    display: block;
+    color: white;
+    text-align: right;
+    font-size: 8px;
+}
+#contacts{
+    text-align: center;
+    color:white;
+    list-style-type: none;
+    display: inline-block;
+    background-color: var(--bg-accent);
+    padding-inline-start: 15px;
+}
+
+#contacts i{
+    color: white;
+}
+#contacts li{
+    color:white;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px 5px 0px;
+    background-color: var(--bg-accent);
+}
+@media screen and (min-width:768px) {
+
+    icon{
+        /* display: inline-block; */
+        overflow: hidden;
+        position:absolute;
+        top: 25%;
+        left: 150px;
+        border-radius: 5px;
+    }
+    img{
+        object-fit: cover;
+        /* overflow:hidden;
+        height: 50px;
+        position: absolute;
+        margin:auto 5px;
+        width: auto;
+        clip: auto; */
+    }
+    .dropdown{    
+        background-color: var(--bg-accent);
+        opacity: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        font-size: 0px;
+        transition: font-size 1s;
+        transition-timing-function: linear;
+        transition-duration: .15s;
+        float: right;
+        padding: 10px;
+    }
+    
+    .dropdown li{
+        display: block;
+        text-align: right;
+        margin: 10px 5px;
+    }
+    .menu-dropdown{
+        position: relative;
+        
+    }
+        
+    #web-dev:hover .dropdown#web-dev-dropdown{
+        opacity: 1;
+        z-index: 1;
+        font-size: 12px;
+    }
+    
+    #other-skills:hover .dropdown#other-skills-dropdown{
+        opacity: 1;
+        z-index: 1;
+        font-size: 12px;
+    }
+    hero{
+        height: 200px;
+    }
+    
+    row{
+        display: flex;
+        flex-direction: row;
+        margin: 25px 0px;
+    }
+    title{
+        /* padding: 5px; */
+        width: 20%;
+        flex: 1 1 20%;
+        border-right: solid var(--accent) 5px;
+        border-bottom: none;
+        font-size: 3vw;
+        text-align: right;
+        padding:0px 10px;
+        margin: 0px 20px 0px 0px;
+        height: auto;
+    
+    }
+
+    gridbox{
+        display: inline-flex ;
+        width: 73%;
+        height: 100%;
+        /* background-color: aqua; */
+        flex: 1 3 75%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        padding: 0px 20px 0px 0px;
+    }
+
+    article{
+        flex: 1 1;
+        min-width: 300px;
+        margin: 3px;
+        border: solid white 2px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .first-article{
+        flex: 1 0 90%;
+        max-width: 100%;
+        height:400px
+        
+    }
+
+
+}
+
+@keyframes dropdown-animation {
+    0% {transform:translate(0)}
+    100% {transform: translate(1)}
+}
