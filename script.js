@@ -1,0 +1,1 @@
+window.location = $("#css").data("link");

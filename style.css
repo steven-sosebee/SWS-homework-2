@@ -9,6 +9,7 @@
     word-wrap: normal;
 }
 
+/* Code used on project page */
 
 pre {
     
@@ -36,6 +37,8 @@ h4{
     margin: 5px 0px;
     display: inline;
 }
+
+/* Prevents menus and links from being altered after clicking. */
 a{
     text-decoration: none;
     color: white;
@@ -44,6 +47,7 @@ a:visited{
     text-decoration: none;
     color:white;
 }
+
 body{
     background-color: var(--bg) ;
     margin: 0px;
@@ -59,15 +63,17 @@ header{
     text-align: right;
 }
 
+/* Begin mobile-first design styles  */
+
 icon{
     display: block;
     margin:0px auto;
     text-align: center;
 
 }
+
 navbar{
     display: inline-block;
-    /* position: absolute; */
     margin: 0px 5px 0px 5px;
 }
 
@@ -76,6 +82,7 @@ navbar ul{
     padding: 10px;
     margin:0px;
 }
+
 navbar li{
     display: inline-block;
     text-decoration-style: none;
@@ -84,9 +91,12 @@ navbar li{
     
 }
 
+/* Hides menu dropdowns for animation when hovered */
+
 .dropdown{
     display: none;
 }
+
 hero{
     background-image: url("./assets/images/hero.jpg");
     background-size: cover;
@@ -100,6 +110,7 @@ row{
     margin: 0px;
 }
 
+/* Section titles are displayed on top of each section in mobile-first style */
 title{
     display: block;
     border-bottom: solid var(--accent) 5px;
@@ -113,6 +124,7 @@ gridbox{
     height: 100%;   
 }
 
+/* Defines the area of each project.  Each area is made of smaller containers for styling */
 article{
     min-height: 200px;
     flex: 1 1 100%;
@@ -124,11 +136,15 @@ article{
     background-clip: border-box;
 }   
 
+/* Creates an anchor for the area of each project instead of wrapping each container.  This 
+enhances accessibility for screen readers and prevents any layout issues. */
 article a{
     position:absolute;
     width:100%;
     height: 100%;
 }
+
+/* Pseudo elements create the blur effect for projects not highlighted. */
 article::before{
     content: "";
     position: absolute;
@@ -150,6 +166,7 @@ article:hover::before{
 
 }
 
+/* Pseudo states create animations when hovering over elements. */
 article:hover{
     transform: scale(1.02);
     z-index: 1;
@@ -211,6 +228,12 @@ article h5{
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* https://github.com/jordandub1/DefineHub/blob/main/assets/images/bright-logo-shadow.png */
+#defineHub{
+    background-image: "https://github.com/jordandub1/DefineHub/blob/main/assets/images/bright-logo-shadow.png";
+    background-size: cover;
+    background-repeat: no-repeat;
+};
 footer{
     display: block;
     background-color: var(--bg-accent);
@@ -242,6 +265,8 @@ footer p{
     margin: 10px 20px 5px 0px;
     background-color: var(--bg-accent);
 }
+
+/* Begin larger screen styles and responsive layouts */
 @media screen and (min-width:768px) {
 
     icon{
